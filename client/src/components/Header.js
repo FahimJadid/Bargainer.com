@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
+import logo from "../assets/Logo.png";
 
 const Header = () => {
   return (
@@ -7,7 +8,9 @@ const Header = () => {
       <header>
         <Navbar bg="dark" data-bs-theme="dark" expand="md" collapseOnSelect>
           <Container>
-            <Navbar.Brand href="/">Bargainer</Navbar.Brand>
+            <Navbar.Brand href="/">
+              <img src={logo} alt="Bargainer" /> Bargainer
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
